@@ -1,0 +1,90 @@
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 20px;
+	background-color: #f8f9fa; /* Light grey background */
+	color: #343a40; /* Dark grey text */
+	line-height: 1.6;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #007bff; /* Primary blue color */
+}
+
+/* Table Styles */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+	background-color: #fff; /* White table background */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+	border-radius: 8px; /* Rounded corners */
+	overflow: hidden; /* Hide overflow for rounded corners */
+}
+
+th, td {
+	border: 1px solid #dee2e6; /* Light grey border */
+	padding: 12px 15px;
+	text-align: left;
+}
+
+th {
+	background-color: #e9ecef; /* Lighter grey header */
+	font-weight: 600;
+	color: #495057; /* Dark grey header text */
+}
+
+/* Input Styles */
+input[type="number"] {
+	width: 90px;
+	padding: 8px;
+	border: 1px solid #ced4da; /* Light grey border */
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 14px;
+	color: #495057;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Smooth transitions */
+}
+
+input[type="number"]:focus {
+	border-color: #80bdff; /* Blue border on focus */
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle blue shadow on focus */
+}
+
+/* Results Area */
+#results {
+	margin-top: 30px;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	text-align: center;
+}
+
+#results p {
+	font-size: 18px;
+	font-weight: bold;
+	color: #28a745; /* Success green color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	table {
+		overflow-x: auto; /* Enable horizontal scrolling on small screens */
+	}
+}
+
+/* Unique background colors for each row */
+tbody tr:nth-child(1) { background-color: #f9f2f2; } /* Very Light Red */
+tbody tr:nth-child(2) { background-color: #f2f9f2; } /* Very Light Green */
+tbody tr:nth-child(3) { background-color: #f2f2f9; } /* Very Light Blue */
+tbody tr:nth-child(4) { background-color: #f9f9f2; } /* Very Light Yellow */
+tbody tr:nth-child(5) { background-color: #f2f9f9; } /* Very Light Cyan */
+tbody tr:nth-child(6) { background-color: #f9f2f9; } /* Very Light Magenta */
+tbody tr:nth-child(7) { background-color: #e9ecef; } /* Similar to header, for contrast */
+tbody tr:nth-child(8) { background-color: #f0f8ff; } /* AliceBlue */
+tbody tr:nth-child(9) { background-color: #faebd7; } /* AntiqueWhite */
+tbody tr:nth-child(10) { background-color: #fff0f5; } /* LavenderBlush */

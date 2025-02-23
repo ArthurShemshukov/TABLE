@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Управление Рисками и Торговым Депозитом</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+	
+  <h2>Управление Рисками и Торговым Депозитом</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>💰 Общий депозит</td>
+        <td><input type="number" id="totalDeposit" value="1000" step="0.01"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>"Допустимый риск потери от депозита на 1 сделку"</td>
+        <td>Потеря денег в $USD на 1 сделку</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="riskPercentage" value="1" step="0.01">%</td>
+        <td id="lossUSD"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Стоп-лосс, исходя из анализа</td>
+        <td>Общий объем позиции</td>
+        <td>Расчёт убытка</td>
+      </tr>
+      <tr>
+        <td><input type="number" id="stopLossPercentage" value="2" step="0.01">%</td>
+        <td id="positionSize"></td>
+        <td id="calculatedLoss"></td>
+      </tr>
+      <tr>
+        <td>Take - Profit , исходя из анализа</td>
+        <td>Общий объем позиции</td>
+        <td>Расчёт дохода</td>
+      </tr>
+      <tr>
+        <td><input type="number" id="takeProfitPercentage" value="4" step="0.01">%</td>
+        <td id="positionSizeForProfit"></td>
+        <td id="calculatedProfit"></td>
+      </tr>
+
+      <tr>
+        <td>Кредитное плечо на фьючерсах</td>
+        <td>Маржа на фьючерсах</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><input type="number" id="leverage" value="5" step="1"></td>
+        <td id="margin"></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <div id="results">
+    <p> ЧЕМ БОЛЬШЕ TIME-FRAME ТЕМ БОЛЬШЕ ДОЛЖЕН БЫТЬ TP/SL , В СООТНОШЕНИЕ ДОЛЖНО БЫТЬ 3:1</p>
+  </div>
+
+	<script src="index.js"></script>
+</body>
+</html>
